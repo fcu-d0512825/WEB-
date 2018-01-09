@@ -3,7 +3,7 @@
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-	<title>Features</title>
+	<title>Activity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -38,34 +38,25 @@
 				text-align: center;
         font-family:fantasy;
 		}
-
 		body {
 			margin: 0;
       padding:0;
       font-size:20px;
       background:-webkit-linear-gradient( rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,0.2) 100%),url("018.jpg") center bottom no-repeat;
       background-attachment: fixed;
-      background-position: center center;
 			background-color: #696969;
       font-family:DFKai-sb;
 		}
-    .row{
-      margin: 0;
-    }
     h2{
       text-align: center;
       color: white;
         padding: 30px;
     }
-
-		.col-sm-7  {
+    .row{
+      margin: 0;
+    }
+    .col-sm-7  {
 			background:radial-gradient( rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,0) 70%);
-		}
-		.container-fluid {
-			background-color:white;
-			padding: 12px;
-			text-align: center;
-      font-family:monospace;
 		}
     .col-sm-3{
       word-wrap:break-word;
@@ -78,18 +69,13 @@
         word-wrap:break-word;
       }
     }
+		.container-fluid {
+			background-color:white;
+			padding: 12px;
+			text-align: center;
+      font-family:monospace;
+		}
     </style>
-	<script>
-	var map;
-	var infowindow;
-    function initMap() {
-        var middle = {lat:22.043613, lng: 121.549120};
-        map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: middle
-        });
-      }
-    </script>
 	</head>
 	<body>
 		<div class="header">
@@ -97,34 +83,14 @@
 		</div>
 		<div class = "row">
 			<div class = "col-sm-3 col-xs-12">
-					<font style="text-shadow:3px 3px #cccccc;"><h2>你可能感興趣的</h2></font>
+					<h2>你可能感興趣的</h2>
+						<button type = "button" class="btn btn-link btn-lg btn-block"><a href="https://www.google.com.tw/"><font style="color: blue;text-shadow:0px 0px 15px #FF37FD;">達悟族特色圖片、地區分布</font></a></button>
 						<button type = "button" class="btn btn-link btn-lg btn-block"><a href="https://www.google.com.tw/"><font style="color: blue;text-shadow:0px 0px 15px #FF37FD;">旅遊資訊</font></a></button>
-						<button type = "button" class="btn btn-link btn-lg btn-block"><a href="https://www.google.com.tw/"><font style="color: blue;text-shadow:0px 0px 15px #FF37FD;">活動規劃</font></a></button>
 						<button type = "button" class="btn btn-link btn-lg btn-block"><a href="https://www.google.com.tw/"><font style="color: blue;text-shadow:0px 0px 15px #FF37FD;">民俗信仰、禁忌</font></a></button>
 						<button type = "button" class="btn btn-link btn-lg btn-block"><a href="https://www.google.com.tw/"><font style="color: blue;text-shadow:0px 0px 15px #FF37FD;">論壇</font></a></button>
 						<button type = "button" class="btn btn-link btn-lg btn-block"><a href="https://www.google.com.tw/"><font style="color: blue;text-shadow:0px 0px 15px #FF37FD;">當地文化須知</font></a></button>
 			</div>
 			<div class = "col-sm-7 col-xs-12">
-				<p><br><br>蘭嶼島與台東相距約49海浬，為台東縣東南方海面上的小島，面積46平方公里，舊稱紅頭嶼，因島上盛產蘭花而改稱蘭嶼。
-					<div class = "iframe-container" id="map"></div>
-				  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLDHZ3ZlVa6EecpB6mx6RB8wOGE_fNt8Q&libraries=places&callback=initMap" async defer></script>
-					<br><br>交通只有一條全長約37公里的主要『環島公路』，全島為風化劇烈的珊瑚礁岩所圍繞，只有少數幾個海灣為沙灘，碧海藍天映照青山翠巒，天風光美不勝收。
-					<br><br><img class="img-responsive" src = "002.jpg" width = "400" height = "400">
-					<br><br>島上有紅頭、漁人、椰油、朗頭、東清、野銀等六個村落沿海而築，並由環島公路相連接，島上居民多為雅美族(達悟族)人，皆以農、漁業為生。
-					<br><br><img class="img-responsive" src = "003.jpg" width = "400" height = "400">
-					<br><br>蘭嶼氣候濕熱多雨，因黑潮流經附近海域，地理環境的特殊，造就豐富珍貴的生態景觀，其獨特的人文風情，傳統祭典、造型別致的獨木舟、傳統的穴居屋等，都是珍貴的文化資產。
-					<br><br>來此可利用幾小時的時間，由山徑登上大(小)天池觀賞那壯觀的風景，沿路可以盡情欣賞蘭嶼島上的奇花異草，感受一下熱帶林的美景，保證讓您嘆為觀止。沿途也可看雅美族人對山林資源的特殊管理方式，在樹上刻下代表某家族對此樹木的所有權標記，也是最原始的版權證明方式。
-					<br><br><img class="img-responsive" src = "004.jpg" width = "400" height = "400">
-					<br><br>島上的動、植物生態也都非常的原始，您也可規劃夜間尋寶例如認識夜間潮間帶生物及體驗捉蟹等活動，幸運的話還可找到蘭嶼動物界的原住民例如角鴞、椰子蟹、象鼻蟲的稀有動物的蹤跡。
-					<br><br><img class="img-responsive" src = "005.jpg" width = "400" height = "400">
-					<br><br>蘭嶼素有海釣者天堂之譽，經常有大型海釣比賽在此舉行，而椰油村的饅頭岩和五孔洞海域，因海底地形變化多，聚集大少螺貝魚類，更是理想的潛水活動場。每年4~6月，島上風和日麗，是最適合遊覽蘭嶼的季節。</p>
-					<br><br><img class="img-responsive" src = "006.jpg" width = "400" height = "400">
-
-
-
-
-				<br><br><button type = "button" class = "btn btn-link btn-lg btn-block"><a href = "http://travel.network.com.tw/tourguide/point/showpage/223.html"><span style="background:blue;color:white;">相關連結</span></a></button>
-				<br><br>
 			</div>
 			<div class = "col-sm-2">
 				<img src = "007.jpg" class="img-circle img-responsive" width = "100%" height = "300">
